@@ -4,7 +4,7 @@
 
 The system (see class diagram) is designed to be extended easily and is kept flexible. 
 
-The root entity is *Reservation*. It can expire, therefore we store the date of creation and the *lifetime* in seconds. With this data, we can calculate the expiration date and check if the reservation is still valid.
+The root entity is **Reservation**. It can expire, therefore we store the date of creation and the *lifetime* in seconds. With this data, we can calculate the expiration date and check if the reservation is still valid.
 
 A reservation has - in any case - exactly one **Passenger**. It also is bound to 1 **Seat**. I cannot be bound to 0 seats because of it's lifetime behavior. The reservations gets created at the point where the user chooses his seat. 
 
